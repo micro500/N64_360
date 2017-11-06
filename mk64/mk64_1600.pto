@@ -1,0 +1,88 @@
+# hugin project file
+#hugin_ptoversion 2
+p f2 w8192 h4096 v360  k12 E0.00916387 R0 n"TIFF_m c:LZW r:CROP"
+m g1 i0 f0 m2 p0.00784314
+
+# image lines
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v75.19 Ra-0.0414899997413158 Rb0.169970005750656 Rc-1.615149974823 Rd0.246900007128716 Re0.363310009241104 Eev0.00916 Er0.99268 Eb0.99067 r0 p-25 y0 TrX0 TrY0 TrZ0 j0 a-0.0487 b0.14824 c-0.14788 d0.2 e0.75 g1.28041 t0.0285 Va1 Vb-0.18911 Vc0.25799 Vd-0.2715 Vx0 Vy0  S4,1596,4,1196 Vm5 n"1.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-25 y60 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"2.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y60 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"3.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y120 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"4.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-25 y120 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"5.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-25 y180 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"6.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y180 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"7.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y240 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"8.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-25 y240 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"9.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-25 y300 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"10.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y300 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"11.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p25 y0 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"12.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y0 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"13.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-75 y0 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"14.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-75 y60 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"15.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y60 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"16.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y120 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"17.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-75 y120 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"18.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-75 y180 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"19.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y180 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"20.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y240 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"21.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p-75 y240 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"22.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y300 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"23.png"
+#-hugin  cropFactor=1
+i w1600 h1200 f0 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev=0 Er=0 Eb=0 r0 p75 y300 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  S4,1596,4,1196 Vm5 n"24.png"
+
+
+# specify variables that should be optimized
+v
+
+
+# control points
+
+#hugin_optimizeReferenceImage 12
+#hugin_blender enblend
+#hugin_remapper nona
+#hugin_enblendOptions --fine-mask
+#hugin_enfuseOptions 
+#hugin_hdrmergeOptions -m avg -c
+#hugin_outputLDRBlended true
+#hugin_outputLDRLayers false
+#hugin_outputLDRExposureRemapped false
+#hugin_outputLDRExposureLayers false
+#hugin_outputLDRExposureBlended false
+#hugin_outputLDRStacks false
+#hugin_outputLDRExposureLayersFused false
+#hugin_outputHDRBlended false
+#hugin_outputHDRLayers false
+#hugin_outputHDRStacks false
+#hugin_outputLayersCompression LZW
+#hugin_outputImageType tif
+#hugin_outputImageTypeCompression LZW
+#hugin_outputJPEGQuality 90
+#hugin_outputImageTypeHDR exr
+#hugin_outputImageTypeHDRCompression LZW
+#hugin_outputStacksMinOverlap 0.7
+#hugin_outputLayersExposureDiff 0.5
+#hugin_optimizerMasterSwitch 0
+#hugin_optimizerPhotoMasterSwitch 0
