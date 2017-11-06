@@ -4,12 +4,32 @@ import os
 import glob
 import sys
 import subprocess
+from PIL import Image
 
 # fetch list
 f = open(sys.argv[1],'r')
     
 def process_frame(frame_number):
-    os.chdir("M:\\N64_360\\mk64\\images\\raw\\crop\\" + frame_number)
+    os.chdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number)
+    
+    print "Cropping"
+    os.mkdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number + "\\crop")
+    
+    # Crop all images in this set
+    for i in range(1,25):
+      for j in range(0,2):
+        img = Image.open(str(i) + "_" + str(j) + ".png")
+        img = img.crop((4, 4, 1596, 1192))
+        img.save("crop/" + str(i) + "_" + str(j) + ".png")
+        
+    img = Image.open("prev.png")
+    img = img.crop((4, 4, 1596, 1192))
+    img.save("crop/prev.png")
+    img = Image.open("prev_1.png")
+    img = img.crop((4, 4, 1596, 1192))
+    img.save("crop/prev_1.png")
+    
+    os.chdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number + "\\crop\\")
     
     use_sub = [False]*25
     
@@ -56,6 +76,10 @@ def process_frame(frame_number):
     
     #include wrap, as png
     foo = subprocess.check_output(["c:\\Program Files\\Hugin\\bin\\enblend.exe", "--wrap", "-o", "M:\\N64_360\\mk64\\images\\" + x + ".png", "out0000.tif", "out0001.tif", "out0002.tif", "out0003.tif", "out0004.tif", "out0005.tif", "out0006.tif", "out0007.tif", "out0008.tif", "out0009.tif", "out0010.tif", "out0011.tif", "out0012.tif", "out0013.tif", "out0014.tif", "out0015.tif", "out0016.tif", "out0017.tif", "out0018.tif", "out0019.tif", "out0020.tif", "out0021.tif", "out0022.tif", "out0023.tif"])
+    
+    for filename in glob.glob("crop//*.png"):
+      os.remove(filename)
+    os.rmdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number + "\\crop")
     
     for filename in glob.glob("out*.tif"):
       os.remove(filename)
