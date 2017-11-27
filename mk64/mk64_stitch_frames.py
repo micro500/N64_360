@@ -4,6 +4,7 @@ import os
 import glob
 import sys
 import subprocess
+import time
 from PIL import Image
 
 # fetch list
@@ -29,6 +30,7 @@ def process_frame(frame_number):
     img = img.crop((4, 4, 1596, 1192))
     img.save("crop/prev_1.png")
     
+    print "Hashing"
     os.chdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number + "\\crop\\")
     
     use_sub = [False]*25
@@ -41,6 +43,7 @@ def process_frame(frame_number):
     prev_0_hash = hashlib.md5(open("prev.png", 'rb').read()).digest()
     prev_1_hash = hashlib.md5(open("prev_1.png", 'rb').read()).digest()
     
+    print "Comparing"
     prev_hashes = [prev_0_hash, prev_1_hash]
         
     for img in range(1,25):
@@ -59,13 +62,14 @@ def process_frame(frame_number):
       else:
         img_list.append(str(img) + "_0.png")
     
+    print "Remapping"
     os.chdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number)
     remap_command = ["c:\\Program Files\\Hugin\\bin\\nona.exe", "-o", "out", "-m", "TIFF_m", "..\\..\\..\\mk64_1600.pto"]
-    print "Remapping"
     # Add the images to the command
     remap_command.extend(img_list)
     # Run the command and wait
-    foo = subprocess.check_output(remap_command)
+    foo = subprocess.check_output(remap_command, stderr=subprocess.STDOUT)
+
     print "Stitching"
     # Stitch process
     #excluding wrap
@@ -77,6 +81,7 @@ def process_frame(frame_number):
     #include wrap, as png
     foo = subprocess.check_output(["c:\\Program Files\\Hugin\\bin\\enblend.exe", "--wrap", "-o", "M:\\N64_360\\mk64\\images\\" + x + ".png", "out0000.tif", "out0001.tif", "out0002.tif", "out0003.tif", "out0004.tif", "out0005.tif", "out0006.tif", "out0007.tif", "out0008.tif", "out0009.tif", "out0010.tif", "out0011.tif", "out0012.tif", "out0013.tif", "out0014.tif", "out0015.tif", "out0016.tif", "out0017.tif", "out0018.tif", "out0019.tif", "out0020.tif", "out0021.tif", "out0022.tif", "out0023.tif"])
     
+    print "Cleanup"
     for filename in glob.glob("crop//*.png"):
       os.remove(filename)
     os.rmdir("M:\\N64_360\\mk64\\images\\raw\\" + frame_number + "\\crop")
@@ -84,12 +89,25 @@ def process_frame(frame_number):
     for filename in glob.glob("out*.tif"):
       os.remove(filename)
     
-    print ""
 
-    
+total_time = 0
+frame_count = 0
+
 while True:
     x = f.readline()
     x = x.rstrip()
     if not x: break
     print x
+    
+    start = time.time()
     process_frame(x)
+    end = time.time()
+
+    delta_time = end - start
+    total_time = total_time + delta_time
+    
+    frame_count = frame_count + 1
+    average_time = total_time / frame_count
+    
+    print str(delta_time) + "s, average of " + str(frame_count) + ": " + str(average_time)
+    print ""
