@@ -1,4 +1,4 @@
-fh,err = io.open("mk64_360_data_KD_30fps_angles.txt")
+fh,err = io.open("mk64_360_data_BB_30fps_angles.txt")
 if err then print("OOps"); return; end
 
 local lines = {}
@@ -58,16 +58,19 @@ for k, line in pairs(lines) do
   -- Ensure the correct directory exists
   os.execute("mkdir M:/N64_360/mk64/images/raw/" .. coord[1])
   
-  -- Record what the previous frame looked like, for comparison
-  client.screenshot("M:/N64_360/mk64/images/raw/" .. coord[1] .. "/prev_1.png")
+  if (coord[2] == 1) then
+    -- Record what the previous frame looked like, for comparison
+    client.screenshot("M:/N64_360/mk64/images/raw/" .. coord[1] .. "/prev_1.png")
+  end
   
   emu.frameadvance()
   
   savestate.saveslot(8)
   savestate.loadslot(8)
-  -- Record what another previous frame looked like, for comparison
-  client.screenshot("M:/N64_360/mk64/images/raw/" .. coord[1] .. "/prev.png")
- 
+  if (coord[2] == 1) then
+    -- Record what another previous frame looked like, for comparison
+    client.screenshot("M:/N64_360/mk64/images/raw/" .. coord[1] .. "/prev.png")
+  end
  
  
   
