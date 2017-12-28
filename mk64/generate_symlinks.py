@@ -21,14 +21,16 @@ while True:
     if (last_x != -1):
       needed = int(x) - last_x      
       
-    for i in range(0, needed):
-      foo = subprocess.check_output(["ln", "-s", "//media//sf_N64_360//mk64//images//final//" + x + ".png", "{0:05d}.png".format(counter)])
-      
-      counter = counter + 1
+      for i in range(0, needed):
+        foo = subprocess.check_output(["ln", "-s", "//media//sf_N64_360//mk64//images//final//" + str(last_x) + ".png", "{0:05d}.png".format(counter)])
+        
+        counter = counter + 1
       
     last_x = int(x)
     
     
-
+for i in range(0,2):
+  foo = subprocess.check_output(["ln", "-s", "//media//sf_N64_360//mk64//images//final//" + str(last_x) + ".png", "{0:05d}.png".format(counter)])
+  counter = counter + 1
     
 
